@@ -28,9 +28,9 @@ class Request extends Generic
         /**
          * @var \Zer0\HTTP\HTTP $http
          */
-        $http = $app->broker('HTTP')->get();
+        $http = $app->factory('HTTP');
 
-        //$app->broker('Tracy')->get();
+        //$app->factory('Tracy');
 
         try {
             if (!isset($_SERVER['ROUTE_CONTROLLER'])) {
